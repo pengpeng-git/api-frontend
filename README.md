@@ -1,57 +1,33 @@
-# Ant Design Pro
+# API开放平台（后端）
+## 项目架构
 
-This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
+后端：[API-backend](https://github.com/pengpeng-git/api-backend)
+前端： [API-frontend](https://github.com/pengpeng-git/api-frontend)
+网关： [API-gateway](https://github.com/pengpeng-git/api-gateway)
+接口SDK：[API-interface](https://github.com/pengpeng-git/api_interface)
 
-## Environment Prepare
+## 技术选型
 
-Install `node_modules`:
+**前端**
 
-```bash
-npm install
-```
+- React 18
+- Ant Design Pro 脚手架
 
-or
+**后端**
 
-```bash
-yarn
-```
+- Java Spring Boot框架
+- MySQL数据库
+- MyBatis-Plus
+- API签名认证(Http调用)
+- Spring Boot Starter(SDK开发)
+- Dubbo分布式(RPC、Nacos)
+- Spring Cloud Gateway微服务网关
+- Swagger+Knife4j接口文档生成
+- Hutool、Apache Common Utils、Gson等工具库
 
-## Provided Scripts
+## 项目展示
+![首页](picture/首页.png)
+![个人信息](picture/个人信息.png)
+![管理页](picture/管理页.png)
 
-Ant Design Pro provides some useful script to help you quick start and build with web project, code style check and test.
-
-Scripts provided in `package.json`. It's safe to modify or add additional script:
-
-### Start project
-
-```bash
-npm start
-```
-
-### Build project
-
-```bash
-npm run build
-```
-
-### Check code style
-
-```bash
-npm run lint
-```
-
-You can also use script to auto fix some lint error:
-
-```bash
-npm run lint:fix
-```
-
-### Test code
-
-```bash
-npm test
-```
-
-## More
-
-You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
+> 注意：项目运行还需要本地启动nacos,同时要修改配置文件中MYSQL,Redis等配置信息为自己的配置。
